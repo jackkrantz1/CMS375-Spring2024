@@ -2,12 +2,20 @@
 ### Database Design and Development Semester Project
 
 
-## (Team name here)
+## ShopSphere
 
 ## Team Members
-### Bal Acharya: (Role)
-### Jack Krantz: (Role)
+### Jack Krantz: Team Lead
+### Bal Acharya: Programmer
 
 
-##  Project name 
-### Project's purpose, the target user, the data to use, etc.
+##  ShopSphere: The E-Commerce Ecosystem 
+### Online retail store database
+Our target user will be small online retail businessses. 
+Our database will manage:
+- Customer (Customer name, customer ID, email address, shipping address, billing address, payment information)
+- Product (Product name, product ID, price, stock quantity, description, category ID)
+- Category (Category name, category ID)
+- Order (Order ID, product ID, quantity, price)
+- Shipping (Shipping ID, order ID, carrier, tracking number, estimated delivery date)
+- Payment Transactions (Transaction ID, order ID, payment amount, date, method, status)
