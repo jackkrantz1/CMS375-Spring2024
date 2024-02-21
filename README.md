@@ -5,8 +5,8 @@
 ## (Team name here)
 
 ## Team Members
-### Bal Acharya: (Role)
-### Jack Krantz: (Role)
+Bal Acharya: (Role)
+Jack Krantz: (Role)
 
 
 ##  Project name 
