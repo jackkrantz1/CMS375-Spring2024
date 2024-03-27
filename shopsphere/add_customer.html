@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Customer</title>
+</head>
+<body>
+
+<h2>Add Customer</h2>
+
+<form action="insert_customer.php" method="post">
+    <label for="customerName">Name:</label><br>
+    <input type="text" id="customerName" name="customerName" required><br>
+    
+    <label for="emailAddress">Email:</label><br>
+    <input type="email" id="emailAddress" name="emailAddress" required><br>
+    
+    <label for="shippingAddress">Shipping Address:</label><br>
+    <input type="text" id="shippingAddress" name="shippingAddress" required><br>
+    
+    <label for="billingAddress">Billing Address:</label><br>
+    <input type="text" id="billingAddress" name="billingAddress" required><br>
+    
+    <label for="paymentInformation">Payment Information:</label><br>
+    <input type="text" id="paymentInformation" name="paymentInformation" required><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
