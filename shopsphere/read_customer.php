@@ -1,10 +1,6 @@
 <?php
 require 'db_connect.php'; // Ensure this points to the correct file where you establish a database connection
 
-// SQL to fetch all customer records
-$sql = "SELECT CustomerID, CustomerName, EmailAddress, ShippingAddress, BillingAddress, PaymentInformation FROM Customer";
-$result = $conn->query($sql);
-
 // Start HTML output
 echo "<!DOCTYPE html>
 <html>
@@ -23,10 +19,24 @@ echo "<!DOCTYPE html>
         th {
             background-color: #f2f2f2;
         }
+        .add-button {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-<h2>List of Customers</h2>";
+<h2>List of Customers</h2>
+<a href='add_customer.html'><button class='add-button'>Add New Customer</button></a>";
+
+// SQL to fetch all customer records
+$sql = "SELECT CustomerID, CustomerName, EmailAddress, ShippingAddress, BillingAddress, PaymentInformation FROM Customer";
+$result = $conn->query($sql);
 
 // Check if there are results
 if ($result->num_rows > 0) {
