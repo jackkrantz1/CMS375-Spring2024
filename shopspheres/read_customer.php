@@ -1,7 +1,6 @@
 <?php
 require 'db_connect.php'; // Ensure this points to the correct file where you establish a database connection
 
-// Start HTML output
 echo "<!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +13,7 @@ echo "<!DOCTYPE html>
         table, th, td {
             border: 1px solid black;
             padding: 8px;
-            text-align: left;
+            text-align: middle;
         }
         th {
             background-color: #f2f2f2;
@@ -27,6 +26,7 @@ echo "<!DOCTYPE html>
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none; /* Ensures it looks good as a link */
         }
     </style>
 </head>

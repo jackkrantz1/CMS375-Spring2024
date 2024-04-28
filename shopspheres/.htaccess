@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /shopspheres/
+
+# Rewrite "customers" to "read_customer.php"
+RewriteRule ^customers$ read_customer.php [NC,L]
